@@ -1,0 +1,77 @@
+#----------------------------#
+# Configuração das Variáveis #
+#----------------------------#
+
+#----------------------#
+# Caminho da Aplicação #
+#----------------------#
+APPLICATION=/path/to/project
+
+HOSTS=host-application
+
+WORKSPACE_TIMEZONE=UTC
+
+#-----------------------------#
+# Customização dos Containers #
+#-----------------------------#
+
+#-------#
+# NGINX #
+#-------#
+NGINX_HOST_HTTP_PORT=80
+NGINX_HOST_HTTPS_PORT=443
+NGINX_HOST_LOG_PATH=./nginx/logs/
+NGINX_SITES_PATH=./nginx/sites/
+NGINX_SSL_PATH=./nginx/ssl/
+
+#---------#
+# PHP_FPM #
+#---------#
+PHP_FPM_INSTALL_BCMATH=true
+PHP_FPM_INSTALL_CALENDAR=true
+PHP_FPM_INSTALL_GRPC=true
+PHP_FPM_INSTALL_COMPOSER=true
+PHP_FPM_INSTALL_COMPRESSION=true
+PHP_FPM_INSTALL_CURL=true
+PHP_FPM_INSTALL_FTP=true
+PHP_FPM_INSTALL_GD=true
+PHP_FPM_INSTALL_GMP=true
+PHP_FPM_INSTALL_INTL=true
+PHP_FPM_INSTALL_JSON_XML=true
+PHP_FPM_INSTALL_MBSTRING=true
+PHP_FPM_INSTALL_MCRYPT=true
+PHP_FPM_INSTALL_MONGODB=true
+PHP_FPM_INSTALL_OPCACHE=false
+PHP_FPM_INSTALL_OPENSSL=true
+PHP_FPM_INSTALL_MYSQLI=true
+PHP_FPM_INSTALL_PCNTL=true
+PHP_FPM_INSTALL_PDO_POSTGRESQL=true
+PHP_FPM_INSTALL_SOAP=true
+PHP_FPM_INSTALL_TOKENIZER=true
+PHP_FPM_INSTALL_XDEBUG=true
+PHP_FPM_INSTALL_MYSQLI=true
+PHP_FPM_BASH_PATH=./php-fpm/.bash_history
+
+#-------#
+# MYSQL #
+#-------#
+MYSQL_DATABASE=default
+MYSQL_USER=user
+MYSQL_PASSWORD=pass
+MYSQL_PORT=3306
+MYSQL_ROOT_PASSWORD=pass
+MYSQL_DATA=./mysql/data/
+MYSQL_ENTRYPOINT_INITDB=./mysql/docker-entrypoint-initdb.d
+
+#---------#
+# MONGODB #
+#---------#
+MONGODB_USER=root
+MONGODB_PASS=pass
+MONGODB_PORT=27017
+MONGODB_DATA=./mongodb/data/db
+
+#-------#
+# REDIS #
+#-------#
+REDIS_DATA=./redis/data/
